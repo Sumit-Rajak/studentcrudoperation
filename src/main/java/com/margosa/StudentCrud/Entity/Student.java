@@ -20,11 +20,12 @@ import lombok.Data;
 @Table(name = "student_tbl")
 public class Student {
 
+	
+
+	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id;
-	
-	
 	@Column(name = "student_id")
 	private Integer studentId;
 

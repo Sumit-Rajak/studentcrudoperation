@@ -12,12 +12,11 @@ public class StudentDto {
 	
 	
 	
-	private Integer Id;
+	
 
 
 	
-	
-	private Integer studentId;
+    private Integer studentId;
 
 	
 	private String StudentName;

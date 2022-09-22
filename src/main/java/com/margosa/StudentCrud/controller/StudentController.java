@@ -28,7 +28,7 @@ public class StudentController {
 
 	private final StudentService studentService;
 
-	@GetMapping("/getallstudents")
+	@GetMapping("/getall")
 	public ResponseEntity<List<StudentDto>> getAllStudents()
 	{
 		log.info("studnet record is fetching");
@@ -63,7 +63,7 @@ public class StudentController {
 		return new ResponseEntity<>(studentService.update(studentId, studentDto),HttpStatus.ACCEPTED);
 	}
 	
-	
+	  
 
 	
 	

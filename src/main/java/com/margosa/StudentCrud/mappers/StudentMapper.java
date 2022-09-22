@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 public class StudentMapper {
 
 	
-	/**    map student dto  to studnet  entity   **/
+	/**    map student  entity  to student DTO   **/
 	public StudentDto map(Student student) {
 		return update(null, student);
 
@@ -31,17 +31,17 @@ public class StudentMapper {
 		}
 
 		if (Objects.nonNull(student)) {
-			studentDto.setId(student.getId());
+			//studentDto.setId(student.getId());
 			studentDto.setStudentId(student.getStudentId());
 			studentDto.setStudentName(student.getStudentName());
 			studentDto.setStudentEmail(student.getStudentEmail());
 			studentDto.setAddress(student.getAddress());
 		}
 
-		return studentDto;
+		return studentDto; 
 	}
 
-	/**    map student entity to studnet dto    **/
+	/**    map student DTo to student entity    **/
 	
 	public Student map(StudentDto studentDto) {
 		return update(null, studentDto);
@@ -77,7 +77,8 @@ public class StudentMapper {
 	}
 
 	
-//	public List<StudentDto> map(List<Student> student) {
-//		return update(null, student);
-//	}
+	public List<StudentDto> map(List<Student> student) {
+		return update(null, student);
+
+	}
 }
